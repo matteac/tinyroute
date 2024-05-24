@@ -27,22 +27,22 @@ export class Router {
         this.routes.set(`${method.toUpperCase()} ${path}`, handler)
     }
 
-    /** Add route with GET method */
+    /** Add route with `GET` method */
     get(path: string, handler: (_req: Request) => Response) {
         this.routes.set(`GET ${path}`, handler)
     }
 
-    /** Add route with POST method */
+    /** Add route with `POST` method */
     post(path: string, handler: (_req: Request) => Response) {
         this.routes.set(`POST ${path}`, handler)
     }
 
-    /** Add route with PATCH method */
+    /** Add route with `PATCH` method */
     patch(path: string, handler: (_req: Request) => Response) {
         this.routes.set(`PATCH ${path}`, handler)
     }
 
-    /** Add route with PUT method */
+    /** Add route with `PUT` method */
     put(path: string, handler: (_req: Request) => Response) {
         this.routes.set(`PUT ${path}`, handler)
     }
