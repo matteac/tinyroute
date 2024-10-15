@@ -1,4 +1,6 @@
 # TinyRoute
+[![JSR](https://jsr.io/badges/@matteac/tinyroute)](https://jsr.io/@matteac/tinyroute)
+
 A tiny http routing library
 
 ## Example
