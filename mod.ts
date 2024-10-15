@@ -3,10 +3,10 @@
  * This module exposes the `Router` class
  */
 
-/** A tiny http router */
-
+/** Sync/Async HTTP handler. It takes a Request object and returns either a Response or a Promise<Response>. */
 export type HTTPHandler = (request: Request) => Response | Promise<Response>;
 
+/** A tiny http router */
 export class Router {
 	private routes: Map<string, HTTPHandler> = new Map();
 	constructor() {}
