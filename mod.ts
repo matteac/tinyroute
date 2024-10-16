@@ -34,8 +34,9 @@ export class Router {
 				const match = routeKey.match(pattern);
 				if (match) {
 					// If matched, extract params and create TinyRequest with params
-					const request = { ...req, params: match.groups || {} };
-					return handler(request);
+					// @ts-ignore: extend type
+					req.params = match.groups || {};
+					return handler(req as TinyRequest);
 				}
 			}
 
